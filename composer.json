@@ -1,0 +1,91 @@
+{
+    "name": "laravel/eav",
+    "description": "",
+    "keywords": [
+        "eav",
+        "eloquent",
+        "laravel",
+        "dynamic",
+        "robust",
+        "schema",
+        "model",
+        "value",
+        "entity",
+        "database",
+        "attribute",
+        "integrated",
+        "intelligent",
+        "entity-attribute-value"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rinvex LLC",
+            "homepage": "https://rinvex.com",
+            "email": "help@rinvex.com"
+        },
+        {
+            "name": "Abdelrahman Omran",
+            "homepage": "https://omranic.com",
+            "email": "me@omranic.com",
+            "role": "Project Lead"
+        },
+        {
+            "name": "Israel Ortuño",
+            "email": "israel@devio.es"
+        },
+        {
+            "name": "The Generous Laravel Community",
+            "homepage": "https://github.com/rinvex/attributes/contributors"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "illuminate/console": "~5.5.0",
+        "illuminate/database": "~5.5.0",
+        "illuminate/support": "~5.5.0",
+        "jeremeamia/superclosure": "^2.3.0",
+        "rinvex/cacheable": "dev-develop",
+        "rinvex/support": "dev-develop",
+        "spatie/eloquent-sortable": "^3.4.0",
+        "spatie/laravel-sluggable": "^2.1.0",
+        "spatie/laravel-translatable": "^2.1.0",
+        "watson/validating": "^3.1.0"
+    },
+    "require-dev": {
+        "codedungeon/phpunit-result-printer": "^0.19.0",
+        "illuminate/container": "~5.5.0",
+        "orchestra/testbench": "^3.6",
+        "phpunit/phpunit": "^7.0.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "Rinvex\\Attributes\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rinvex\\Addresses\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Rinvex\\Attributes\\Providers\\AttributesServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
